@@ -159,24 +159,6 @@ Useful switches:
 --random_ablation            Use random synchronization skipping and random pruning
 ```
 
-Baseline or analysis variants:
-
-```text
---use_distgl_partition       Enable DisTGL source-based partitioning
---use_neutronstream          Enable NeutronStream fixed-window policy
---top_k_ratio                Enable MemShare hotspot data-state sharing
---full_cache                 Enable Full Cache analysis variant
-```
-
-For specific variants, append one of the following options to the multi-node command:
-
-```bash
---full_cache
---use_neutronstream
---use_distgl_partition
---top_k_ratio 0.1
-```
-
 ## Outputs
 
 The script writes outputs to:
