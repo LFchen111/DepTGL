@@ -106,7 +106,7 @@ torchrun \
   --memory_dim 172 \
   --message_dim 172 \
   --time_dim 172 \
-  --sync_every 3 \
+  --sync_every 6 \
   --grad_ema_threshold 1.6 \
   --time_ema_threshold 0.5
 ```
@@ -156,7 +156,6 @@ Useful switches:
 --disable_dynamic_sync       Disable adaptive cache synchronization
 --disable_load_aware_drop    Disable load-aware replay pruning
 --disable_prefetch           Disable dependency prefetching / replay
---random_ablation            Use random synchronization skipping and random pruning
 ```
 
 ## Outputs
